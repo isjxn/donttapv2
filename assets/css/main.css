@@ -1,0 +1,37 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    display: grid;
+    place-content: center;
+}
+
+#gameField {
+    width: 646px;
+    height: 646px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #2196F3;
+}
+
+.square {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.active {
+    background-color: green;
+}
+
+.miss {
+    background-color: red;
+}
